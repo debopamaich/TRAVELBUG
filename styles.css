@@ -234,7 +234,7 @@ nav a {
 /* Itinerary Planner section */
 
 .itinerary-planner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1534495.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1534495.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -247,6 +247,7 @@ nav a {
 .itinerary-planner h2 {
     font-size: 3.5rem;
     margin-bottom: 0px;
+    margin-top:100px;
     color: #aab5bc;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 2px 2px black;
@@ -316,21 +317,29 @@ nav a {
 
 .reviews-ratings {
     /* background-image: url(1534535.jpg); */
-    background: #000;
+   background-image: linear-gradient(to bottom, rgb(59, 38, 13) , rgb(32, 32, 31),rgb(17, 16, 16));
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     padding: 50px;
     color: #faf6f6;
+    max-height:100%;
     max-width: 100%;
 }
 
 .reviews-ratings h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 3.5rem;
+    margin-bottom: 0px;
+    margin-top:5px;
+    color: #aab5bc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    padding-top: 0%;
+    font-family: 'Cinzel', serif;
 }
 
 .reviews-ratings p {
@@ -357,15 +366,21 @@ nav a {
 /* Connect section */
 
 .connect {
-    background-color: #f9f9f9;
-    padding: 50px;
-    background-image: url(1534742.jpg);
-    color: #0b0539;
+   padding: 50px;
+    background-image: linear-gradient(to bottom , rgb(20, 19, 19) , rgb(32, 25, 47),rgb(35, 22, 84));
+    color: #fff;
 }
 
 .connect h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+ font-size: 3.5rem;
+    margin-bottom: 0px;
+    margin-top:5px;
+    color: #aab5bc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    padding-top: 0%;
+    font-family: 'Cinzel', serif;
 }
 
 .connect p {
@@ -382,8 +397,8 @@ nav a {
 
 .connect .user-profile img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+   width: 250px;
+    height: 200px;
     margin-bottom: 10px;
 }
 
