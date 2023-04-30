@@ -195,7 +195,7 @@ nav a {
   }
   
   .hero h1 {
-    font-size:4rem;
+    font-size:3.5rem;
     letter-spacing: 3px;
   }
   
@@ -312,12 +312,12 @@ nav a {
 }
 
 .guide h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 0px;
 }
 
 .guide p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0px;
   margin-top: 0;
 }
