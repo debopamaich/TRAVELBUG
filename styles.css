@@ -26,6 +26,27 @@ header {
   top: 0;
   z-index: 1;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  header {
+    height: 60px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  header {
+    height: 50px;
+    padding: 5px;
+  }
+}
 
 nav {
   display: flex;
@@ -74,7 +95,34 @@ nav a {
   cursor: pointer;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  nav li {
+    margin: 8px 0;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 0;
+    font-weight:100px;
+    border-bottom: 2px solid  white;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links ul li::after {
+    display: none;
+  }
+}
 /* Hero section */
 
 .landing {
@@ -141,7 +189,57 @@ nav a {
     border-right-color: transparent;
   }
 }
-
+@media (max-width: 768px) {
+  .hero {
+    height: 450px;
+  }
+  
+  .hero h1 {
+    font-size:4rem;
+    letter-spacing: 3px;
+  }
+  
+  .hero p {
+    font-size:0.8rem;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-right: none;
+    animation: none;
+  }
+}
+@media (min-width: 768px) {
+  .landing {
+    height: 100vh;
+  }
+  
+  .hero {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+  }
+  
+  .hero h1 {
+    font-size:8rem;
+    letter-spacing: 6px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    width: max-content;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .hero button {
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border-radius: 25px;
+  }
+}
 .hero button {
   background-color: #d9dce0;
   color: #090909;
@@ -228,6 +326,34 @@ nav a {
   cursor: pointer;
   transform: scale(1.2);
 }
+@media screen and (max-width: 768px) {
+  .guide-card {
+    display: flex;
+    margin-top: 5%;
+    height: fit-content;
+  }
+  .guide {
+    font-size:0.5rem;
+    max-width:200px;
+    margin: 0px;
+    position:static;
+  }
+  .guide h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+  .guide img {
+    width:5rem;
+    height: auto;
+    margin-bottom: 0px;
+    transition: 0.5s;
+    box-shadow: 0px 2px 10px black;
+  }
+  .travel-guides h2 {
+  font-size: 4rem;
+  }
+  
+  }
 
 /* Itinerary Planner section */
 
@@ -310,11 +436,43 @@ nav a {
   color: #d9dce0;
   box-shadow: 0px 0px 10px #d9dce0;
 }
+@media screen and (max-width: 768px) {
+  .itinerary-planner {
+  padding: 30px;
+  }
+  .itinerary-planner h2 {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  }
+  .itinerary-planner p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  }
+  .itinerary-planner form {
+  margin-left: 0;
+  }
+  .itinerary-planner label {
+  font-size: 16px;
+  }
+  .itinerary-planner input {
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  }
+  .itinerary-planner .text {
+  width: 100%;
+  }
+  .itinerary-planner button {
+  font-size: 1rem;
+  padding: 8px 30px;
+  border-radius: 20px;
+  }
+  }
 
 /* Reviews & Ratings section */
 
 .reviews-ratings {
-  /* background-image: url(1534535.jpg); */
   background-image: linear-gradient(
     to bottom,
     rgb(59, 38, 13),
@@ -364,6 +522,49 @@ nav a {
   font-size: 18px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+  .reviews-ratings {
+    padding: 20px;
+  }
+  
+  .reviews-ratings h2 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+  }
+  
+  .reviews-ratings p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-ratings .review h3 {
+    font-size: 20px;
+  }
+  
+  .reviews-ratings .review p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews-ratings h2 {
+    font-size: 2rem;
+  }
+  
+  .reviews-ratings p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .reviews-ratings .review h3 {
+    font-size: 18px;
+  }
+  
+  .reviews-ratings .review p {
+    font-size: 14px;
+  }
+}
+
 
 /* Connect section */
 
@@ -549,3 +750,129 @@ a.google img {
   color: grey;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 768px) {
+  .connect {
+  padding: 30px;
+  }
+  
+  .connect h2 {
+  font-size: 2.5rem;
+  }
+  
+  .connect .user-profile img {
+  width: 200px;
+  height: 150px;
+  }
+  
+  .connect .user-profile h3 {
+  font-size: 20px;
+  }
+  
+  .connect .user-profile p {
+  font-size: 16px;
+  }
+  
+  .connect .user-profile a {
+  padding: 8px 20px;
+  font-size: 1rem;
+  }
+  
+  footer {
+  height: auto;
+  }
+  
+  .foot-wrapper {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  }
+  
+  .footer-logo {
+  width: 100%;
+  }
+  
+  .foot-logo {
+  width: 200px;
+  height: 30px;
+  }
+  
+  .foot-nav-links {
+  flex-direction: column;
+  gap: 10px;
+  }
+  
+  .foot-link-left,
+  .foot-link-right {
+  width: 100%;
+  text-align: center;
+  }
+  
+  .quick-links {
+  text-align: center;
+  }
+  
+  .quick-links li {
+  line-height: 24px;
+  }
+  
+  .social-icons {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  }
+  
+  .social-icons li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+  font-size: 14px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  }
+  }
+  
+  @media only screen and (max-width: 480px) {
+  .connect h2 {
+  font-size: 2rem;
+  }
+  
+  .connect .user-profile img {
+  width: 150px;
+  height: 100px;
+  }
+  
+  .connect .user-profile h3 {
+  font-size: 18px;
+  }
+  
+  .connect .user-profile p {
+  font-size: 14px;
+  }
+  
+  .connect .user-profile a {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  }
+  
+  .foot-logo {
+  width: 150px;
+  height: 24px;
+  }
+  
+  .quick-links li {
+  line-height: 20px;
+  }
+  
+  .social-icons a {
+  font-size: 12px;
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+  margin-right: 4px;
+  }
+  }
