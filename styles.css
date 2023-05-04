@@ -30,7 +30,7 @@ header {
   body {
     font-size: 16px;
   }
-  
+
   header {
     height: 60px;
     padding: 10px;
@@ -41,7 +41,7 @@ header {
   body {
     font-size: 14px;
   }
-  
+
   header {
     height: 50px;
     padding: 5px;
@@ -107,8 +107,8 @@ nav a {
     padding: 10px 20px;
     text-align: center;
     border-radius: 0;
-    font-weight:100px;
-    border-bottom: 2px solid  white;
+    font-weight: 100px;
+    border-bottom: 2px solid white;
   }
 
   .nav-links {
@@ -193,14 +193,14 @@ nav a {
   .hero {
     height: 450px;
   }
-  
+
   .hero h1 {
-    font-size:3.5rem;
+    font-size: 3.5rem;
     letter-spacing: 3px;
   }
-  
+
   .hero p {
-    font-size:0.8rem;
+    font-size: 0.8rem;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -212,17 +212,17 @@ nav a {
   .landing {
     height: 100vh;
   }
-  
+
   .hero {
     height: calc(100vh - 80px);
     margin-top: 80px;
   }
-  
+
   .hero h1 {
-    font-size:8rem;
+    font-size: 8rem;
     letter-spacing: 6px;
   }
-  
+
   .hero p {
     font-size: 1.5rem;
     width: max-content;
@@ -233,7 +233,7 @@ nav a {
     animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-fill-mode: forwards;
   }
-  
+
   .hero button {
     font-size: 1.2rem;
     padding: 10px 40px;
@@ -317,7 +317,7 @@ nav a {
 }
 
 .guide p {
-  font-size:0.8rem;
+  font-size: 0.8rem;
   margin-bottom: 0px;
   margin-top: 0;
 }
@@ -333,27 +333,26 @@ nav a {
     height: fit-content;
   }
   .guide {
-    font-size:0.5rem;
-    max-width:200px;
+    font-size: 0.5rem;
+    max-width: 200px;
     margin: 0px;
-    position:static;
+    position: static;
   }
   .guide h3 {
     font-size: 1.5rem;
     margin-bottom: 0px;
-}
+  }
   .guide img {
-    width:5rem;
+    width: 5rem;
     height: auto;
     margin-bottom: 0px;
     transition: 0.5s;
     box-shadow: 0px 2px 10px black;
   }
   .travel-guides h2 {
-  font-size: 4rem;
+    font-size: 4rem;
   }
-  
-  }
+}
 
 /* Itinerary Planner section */
 
@@ -438,37 +437,37 @@ nav a {
 }
 @media screen and (max-width: 768px) {
   .itinerary-planner {
-  padding: 30px;
+    padding: 30px;
   }
   .itinerary-planner h2 {
-  font-size: 2.5rem;
-  margin-top: 50px;
+    font-size: 2.5rem;
+    margin-top: 50px;
   }
   .itinerary-planner p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
   }
   .itinerary-planner form {
-  margin-left: 0;
+    margin-left: 0;
   }
   .itinerary-planner label {
-  font-size: 16px;
+    font-size: 16px;
   }
   .itinerary-planner input {
-  font-size: 16px;
-  margin-bottom: 10px;
-  width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
   }
   .itinerary-planner .text {
-  width: 100%;
+    width: 100%;
   }
   .itinerary-planner button {
-  font-size: 1rem;
-  padding: 8px 30px;
-  border-radius: 20px;
+    font-size: 1rem;
+    padding: 8px 30px;
+    border-radius: 20px;
   }
-  }
+}
 
 /* Reviews & Ratings section */
 
@@ -498,16 +497,17 @@ nav a {
   color: #aab5bc;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 2px 2px 2px black;
+  text-align: center;
   letter-spacing: 2px;
   padding-top: 0%;
   font-family: "Cinzel", serif;
 }
-
+/*
 .reviews-ratings p {
   font-size: 18px;
   margin-bottom: 40px;
   color: #000;
-}
+} */
 
 .reviews-ratings .review {
   margin-bottom: 40px;
@@ -526,21 +526,21 @@ nav a {
   .reviews-ratings {
     padding: 20px;
   }
-  
+
   .reviews-ratings h2 {
     font-size: 2.5rem;
     margin-top: 0px;
   }
-  
+
   .reviews-ratings p {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  
+
   .reviews-ratings .review h3 {
     font-size: 20px;
   }
-  
+
   .reviews-ratings .review p {
     font-size: 16px;
   }
@@ -550,21 +550,100 @@ nav a {
   .reviews-ratings h2 {
     font-size: 2rem;
   }
-  
+
   .reviews-ratings p {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  
+
   .reviews-ratings .review h3 {
     font-size: 18px;
   }
-  
+
   .reviews-ratings .review p {
     font-size: 14px;
   }
 }
 
+.reviews-ratings-container-all {
+  margin: 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 10rem;
+}
+.personas-container {
+  /* margin-top: 10rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 30rem;
+  border: 2px solid rgb(57, 55, 55);
+  border-radius: 20px;
+  background-image: url("https://t3.ftcdn.net/jpg/03/51/51/28/360_F_351512882_2kFH8IaSe4lyA7SXBLzEXyGKNEgbO1iH.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 30rem;
+  height: 30rem;
+}
+
+.person-img {
+  width: 5rem;
+  height: 5rem;
+}
+.person-name {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+.review-tag {
+  width: 6rem;
+  margin: 0.5rem;
+}
+.person-name-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 5rem;
+}
+.experience {
+  width: 17rem;
+  height: 15rem;
+  font-size: 16px;
+  text-align: center;
+  color: blue;
+  padding: 15px 5px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #f3f0f0;
+  box-shadow: 8px 10px 10px #949191;
+}
+.right-content {
+  width: 30rem;
+  height: 30rem;
+}
+.picture {
+  width: 20rem;
+  height: 25rem;
+  margin: 3rem 2rem;
+  border: 2px solid rgb(57, 55, 55);
+  border-radius: 3rem;
+  box-shadow: -8px 10px 6px #949191;
+}
 
 /* Connect section */
 
@@ -753,126 +832,126 @@ a.google img {
 
 @media only screen and (max-width: 768px) {
   .connect {
-  padding: 30px;
+    padding: 30px;
   }
-  
+
   .connect h2 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-  
+
   .connect .user-profile img {
-  width: 200px;
-  height: 150px;
+    width: 200px;
+    height: 150px;
   }
-  
+
   .connect .user-profile h3 {
-  font-size: 20px;
+    font-size: 20px;
   }
-  
+
   .connect .user-profile p {
-  font-size: 16px;
+    font-size: 16px;
   }
-  
+
   .connect .user-profile a {
-  padding: 8px 20px;
-  font-size: 1rem;
+    padding: 8px 20px;
+    font-size: 1rem;
   }
-  
+
   footer {
-  height: auto;
+    height: auto;
   }
-  
+
   .foot-wrapper {
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
   }
-  
+
   .footer-logo {
-  width: 100%;
+    width: 100%;
   }
-  
+
   .foot-logo {
-  width: 200px;
-  height: 30px;
+    width: 200px;
+    height: 30px;
   }
-  
+
   .foot-nav-links {
-  flex-direction: column;
-  gap: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
   .foot-link-left,
   .foot-link-right {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
   }
-  
+
   .quick-links {
-  text-align: center;
+    text-align: center;
   }
-  
+
   .quick-links li {
-  line-height: 24px;
+    line-height: 24px;
   }
-  
+
   .social-icons {
-  margin-top: 20px;
-  margin-bottom: 0;
-  text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
   }
-  
+
   .social-icons li {
-  margin-right: 10px;
-  margin-bottom: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
-  
+
   .social-icons a {
-  font-size: 14px;
-  line-height: 32px;
-  width: 32px;
-  height: 32px;
-  margin-right: 6px;
+    font-size: 14px;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
   }
-  }
-  
-  @media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 480px) {
   .connect h2 {
-  font-size: 2rem;
+    font-size: 2rem;
   }
-  
+
   .connect .user-profile img {
-  width: 150px;
-  height: 100px;
+    width: 150px;
+    height: 100px;
   }
-  
+
   .connect .user-profile h3 {
-  font-size: 18px;
+    font-size: 18px;
   }
-  
+
   .connect .user-profile p {
-  font-size: 14px;
+    font-size: 14px;
   }
-  
+
   .connect .user-profile a {
-  padding: 6px 16px;
-  font-size: 0.9rem;
+    padding: 6px 16px;
+    font-size: 0.9rem;
   }
-  
+
   .foot-logo {
-  width: 150px;
-  height: 24px;
+    width: 150px;
+    height: 24px;
   }
-  
+
   .quick-links li {
-  line-height: 20px;
+    line-height: 20px;
   }
-  
+
   .social-icons a {
-  font-size: 12px;
-  line-height: 28px;
-  width: 28px;
-  height: 28px;
-  margin-right: 4px;
+    font-size: 12px;
+    line-height: 28px;
+    width: 28px;
+    height: 28px;
+    margin-right: 4px;
   }
-  }
+}
