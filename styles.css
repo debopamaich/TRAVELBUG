@@ -583,9 +583,12 @@ nav a {
   height: 30rem;
   border: 2px solid rgb(57, 55, 55);
   border-radius: 20px;
-  background-image: url("https://t3.ftcdn.net/jpg/03/51/51/28/360_F_351512882_2kFH8IaSe4lyA7SXBLzEXyGKNEgbO1iH.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(210, 183, 86),
+    rgb(166, 129, 36),
+    rgb(75, 71, 45)
+  );
 }
 
 .left-content-wrapper {
@@ -593,17 +596,17 @@ nav a {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
 }
 
 .person-img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 .person-name {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
 }
@@ -624,25 +627,25 @@ nav a {
   height: 15rem;
   font-size: 16px;
   text-align: center;
-  color: blue;
+  color:  rgb(149, 116, 16);
   padding: 15px 5px;
   font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 2px solid rgb(0, 0, 0);
-  background-color: #f3f0f0;
-  box-shadow: 8px 10px 10px #949191;
+  background-color: #403739;
+  box-shadow: 8px 10px 10px #a99b65;
 }
 .right-content {
-  width: 30rem;
-  height: 30rem;
+  width: 40rem;
+  height: 20rem;
 }
 .picture {
-  width: 20rem;
-  height: 25rem;
+  width: 15rem;
+  height: 20rem;
   margin: 3rem 2rem;
   border: 2px solid rgb(57, 55, 55);
   border-radius: 3rem;
-  box-shadow: -8px 10px 6px #949191;
+  box-shadow: -8px 10px 6px #a99b65;
 }
 
 /* Connect section */
